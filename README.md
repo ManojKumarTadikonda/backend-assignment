@@ -1,6 +1,6 @@
 ---
 
-# 📋 Backend Intern Assignment – Task Management System
+#  Backend Intern Assignment – Task Management System
 
 A scalable full-stack Task Management system built as part of a **Backend Developer Intern assignment**.  
 The project demonstrates secure authentication, role-based access control, RESTful API design, and a minimal frontend to interact with protected APIs.
@@ -9,9 +9,9 @@ The primary focus of this project is **backend architecture, security, and scala
 
 ---
 
-## 🚀 Core Features
+##  Core Features
 
-### 🔐 Authentication & Authorization
+###  Authentication & Authorization
 - User registration and login using **JWT authentication**
 - Authorization enforced using middleware based on decoded JWT role
 - Secure password hashing using **bcrypt**
@@ -21,7 +21,7 @@ The primary focus of this project is **backend architecture, security, and scala
 - Regular users can only access their own tasks
 
 
-### 📋 Task Management (CRUD)
+###  Task Management (CRUD)
 - Users can create, update, and delete their own tasks
 - User-specific task access enforced at backend
 - Admin users can view all tasks across users
@@ -30,43 +30,43 @@ The primary focus of this project is **backend architecture, security, and scala
 - Pagination for large datasets
 
   
-### 👑 Admin Capabilities
+###  Admin Capabilities
 - View all tasks across all users (read-only)
 - Search and filter tasks globally
 - Create other admin users via protected API
 - Admin actions secured using JWT role-based authorization
 
 
-### 🛡️ Security & Best Practices
+###  Security & Best Practices
 - Input validation and sanitization
 - Protected routes using JWT middleware
 - Proper HTTP status codes and error handling
 - Environment-based configuration
 
-### 🧪 Developer Experience
+###  Developer Experience
 - RESTful API design with versioning (`/api/v1`)
 - API testing using Postman / Swagger
 - Dockerized setup for local development
 
 
 ---
-## 📌 Assignment Requirement Coverage
+##  Assignment Requirement Coverage
 
 | Requirement | Status |
 |------------|--------|
-| User registration & login | ✅ Implemented |
-| Password hashing & JWT auth | ✅ Implemented |
-| Role-based access (User / Admin) | ✅ Implemented |
-| CRUD APIs for secondary entity (Tasks) | ✅ Implemented |
-| API versioning | ✅ `/api/v1` |
-| Error handling & validation | ✅ Implemented |
-| API documentation | ✅ Postman / Swagger |
-| Database schema | ✅ MongoDB (Mongoose) |
-| Basic frontend UI | ✅ React |
-| Docker support | ✅ Included |
-| Scalability considerations | ✅ Documented |
+| User registration & login |  Implemented |
+| Password hashing & JWT auth |  Implemented |
+| Role-based access (User / Admin) |  Implemented |
+| CRUD APIs for secondary entity (Tasks) |  Implemented |
+| API versioning |  `/api/v1` |
+| Error handling & validation |  Implemented |
+| API documentation |  Postman / Swagger |
+| Database schema |  MongoDB (Mongoose) |
+| Basic frontend UI |  React |
+| Docker support |  Included |
+| Scalability considerations |  Documented |
 
-## 📈 Scalability & Architecture Notes
+##  Scalability & Architecture Notes
 
 - Stateless JWT authentication enables horizontal scaling
 - Follows separation of concerns to allow easy migration to microservices
@@ -79,14 +79,14 @@ The primary focus of this project is **backend architecture, security, and scala
   - Load balancers (Nginx)
   - Rate limiting and centralized logging
 
-## 📘 API Documentation
+##  API Documentation
 
 - All APIs follow REST principles and proper HTTP status codes
 - Some endpoints are restricted to admin users only and require an admin JWT token.
 - Authentication required via `Authorization: Bearer <JWT>`
 - API documentation and testing using Postman (Swagger-ready architecture)
 
-## 🧪 Postman Collection
+##  Postman Collection
 
 A complete Postman collection is provided to test all APIs, including:
 
@@ -96,7 +96,7 @@ A complete Postman collection is provided to test all APIs, including:
 - Admin-only endpoints
 - Search, filtering, and pagination
 
-🔗 **Postman Collection Link:**  
+ **Postman Collection Link:**  
 https://.postman.co/workspace/My-Workspace~02dde1f3-487f-44bf-8a05-5991a200ca09/request/40196447-9f355027-403e-4dc7-aa56-c9d5a3c78547?action=share&creator=40196447&ctx=documentation&active-environment=40196447-eab35072-5366-4b3b-8032-903ee7280eb6
 
 ### How to Use
@@ -118,7 +118,7 @@ Key Endpoints:
 
 
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 ### Frontend
 
@@ -145,7 +145,7 @@ Key Endpoints:
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 backend-intern-assignment/
@@ -157,7 +157,7 @@ backend-intern-assignment/
 
 ---
 
-## ⚙️ Environment Variables
+##  Environment Variables
 
 Create `.env` files using the provided `.env.example` files.
 
@@ -177,9 +177,9 @@ VITE_API_URL=http://localhost:5000
 
 ---
 
-## ▶️ Project Setup (Without Docker)
+##  Project Setup (Without Docker)
 
-### 1️⃣ Clone the Repository
+### 1️ Clone the Repository
 
 ```bash
 git clone https://github.com/ManojKumarTadikonda/backend-intern-assignment.git
@@ -188,7 +188,7 @@ cd backend-intern-assignment
 
 ---
 
-### 2️⃣ Backend Setup
+### 2️ Backend Setup
 
 ```bash
 cd backend
@@ -204,7 +204,7 @@ http://localhost:5000
 
 ---
 
-### 3️⃣ Frontend Setup
+### 3️ Frontend Setup
 
 ```bash
 cd ../frontend
@@ -220,16 +220,16 @@ http://localhost:5173
 
 ---
 
-## 🐳 Project Setup (With Docker)
+##  Project Setup (With Docker)
 
-### 1️⃣ Prerequisites
+### 1️ Prerequisites
 
 * Docker
 * Docker Compose
 
 ---
 
-### 2️⃣ Run the Application
+### 2️ Run the Application
 
 From the **project root**:
 
@@ -239,7 +239,7 @@ docker-compose up --build
 
 ---
 
-### 3️⃣ Access the Application
+### 3️ Access the Application
 
 | Service  | URL                                            |
 | -------- | ---------------------------------------------- |
@@ -252,11 +252,11 @@ docker-compose up --build
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 Below are some screenshots demonstrating the functionality of the application.
 
-### 🔐 Authentication
+###  Authentication
 <p float="left">
   <img src="screenshots/login.png" width="450" />
   <img src="screenshots/signup.png" width="450" />
@@ -265,12 +265,12 @@ Below are some screenshots demonstrating the functionality of the application.
 
 ---
 
-### 📋 Dashboard
+###  Dashboard
 <img src="screenshots/dashboard.png" width="800" />
 
 ---
 
-### 📱 Responsive Design (Mobile)
+###  Responsive Design (Mobile)
 <p float="left">
 <img src="screenshots/mobile-view1.jpeg" width="250" />
 <img src="screenshots/mobile-view2.jpeg" width="250" />
@@ -281,7 +281,7 @@ Below are some screenshots demonstrating the functionality of the application.
 ---
 
 
-## 👤 Author
+##  Author
 
 **Manoj Kumar**  
 Full-Stack Developer | Backend-Focused  
